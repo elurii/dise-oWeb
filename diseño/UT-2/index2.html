@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Descendiente */
+
+        div p{
+            color:blue
+        }
+
+        /* Hijo Directo */
+
+        div > p{
+            font-weight: bold;
+        }
+
+        /* Hermano adyacente */
+
+        h2 + p {
+            color: red
+        }
+
+        /*Hermanos Generales */
+
+        h3 ~ p{
+            background-color: lightslategray;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    
+    <h1>Ejemplo de selectores de relacion</h1>
+    <h2>Selector descendiente e hijo directo</h2>
+    <div>
+        <section>
+            <p>Este parrafo es hijo directo de DIV (azul y en negrita)</p>
+        </section>    
+    </div>
+
+    <h2>Selector de hermano adyacente</h2>
+    <p>este parrafo viene justo despues de un H2 -> rojo</p>
+    <p>Este parrafo NO es adyacente -> Estilo normal</p>
+
+    <h3>Selector hermanos generales</h3>
+    <p>Todos los parrfos despues del h3 -> Fondo amarillo</p>
+    <p>Tambien este parrafo</p>
+    
+</body>
+</html>

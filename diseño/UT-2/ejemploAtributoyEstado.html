@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        a:hover{
+            color: red;
+        }
+
+        p::firts-line{
+            font-weight: bold;
+        }
+        
+        p::before{
+            content: "->";
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejemplo de selectores avanzados</h1>
+
+    <h2>Selector de atributos</h2>
+    <form>
+        <input type="text" placeholder="Este input tiene borde azul">
+        <input type="password" placeholder="Este no cambia">
+    </form>
+
+    <h2>Pseudo-clase</h2>
+    <p>enlace con <code>:hover</code>: <a href="#">pasa el raton por aqui</a></p>
+
+    <h2>Pseudo-elementos</h2>
+    <p>Este parrafo aplica <code>::first-line</code> y <code>::before</code>
+       La primera linea aparece en negrita y delante del párrafo se añade a un icono.</p>
+    
+</body>
+</html>
