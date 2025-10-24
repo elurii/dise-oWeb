@@ -6,27 +6,75 @@
     <link href="../../Bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <script src="../../Bootstrap/js/bootstrap.bundle.min.js"></script>
     <title>Document</title>
+     <style type="text/css">
+        header{
+            background-color: #9ACA40;
+            color: #FFFFFF;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+         footer {
+            background-color: #000;
+            color: #FFFFFF;
+            padding: 20px;
+            margin-top: 10px;
+            margin-bottom: 0px;
+        }
+
+        body{
+           background: #F0F3F5 ;
+           color: #fff;
+        }
+
+        main{
+            background: white;
+            color: black;
+            padding: 20px 0;
+        }
+
+        aside{
+            background: #c2d6d6;
+            padding: 60px 0;
+            color: #0d47a1
+        }
+
+        section{
+            margin-bottom: 20px;
+        }
+
+        .caja{
+            background: #F0F3F5;
+            color:#000;
+            border: 1px solid #c2d6d6; 
+            padding: 5px; 
+            margin: 20px;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Cabecera -->
-    <header>
-        cabecera
-    </header>
+    <div class="container">
 
-    <!-- seccion -->
-    <section>
+        <header class="row">
+            <div class="col">Header</div>
+        </header>
 
-        <!-- Parte principal -->
-        <main> Parte Principal </main>
+    
+        <section class="row">
+            
+            <main class="col">main</main>
 
-        <!-- Barra Lateral -->
-        <aside> Barra Lateral </aside>
-    </section>
+            <aside class="col">aside</aside>
+            </div>
+        </section>
 
-    <footer>
-        pie
-    </footer>
+        <footer class="row">
+            <div class="col">
+                footer
+            </div>
+        </footer>
+    </div>
     
 </body>
 </html>
