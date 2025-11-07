@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <title>formulario vertical</title>
+    <style>
+        .caja{
+            border: 1px solid;
+            padding-left: 30px;
+            padding-right: 30px;
+            border-radius: 10px;
+        }
+        .boton{
+            border-radius: 100px;
+        }
+      
+   
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="row justify-content-center align-items-center">
+            <div class="text-center">
+                <img src="../imagenes/Amazon_logo.svg" class="mt-3" width="15%">
+            </div>
+        </header>
+        <div class="row justify-content-center align-items-center mt-3 ">
+            <div class="caja col-auto mt-3 ">
+                <form>
+                    <div class="col-auto mt-3">
+                        <p>Inicia sesion o crea una cuenta nueva</p>
+                        <small class="bold"><strong>introduce el numero de telefono movil o el correo electronico</strong></small>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" id="user" placeholder="" required>
+                    </div>
+                    <div class="d-grid mb-3">
+                        <button id="boton" class="btn btn-warning">Continuar</button>
+                    </div>
+                    <div class="d-grid mb-3">
+                        <p>Al continuar, aceptas las <a href="#">Condiciones de uso</a> y el <a href="#">Aviso de privacidad</a> de Amazon.</p>
+                    </div>
+                     <div class="d-grid mb-3">
+                        <p><a href="#">¿Necesitas ayuda?</a> </p>
+                    </div>
+                    <hr>
+                    <div class="col-auto">
+                    <p><strong>¿Comprando para el trabajo?</strong></p>
+                    <p><a href="#">Crea una cuenta de empresa gratis</a></p>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

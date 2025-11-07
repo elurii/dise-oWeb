@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <title>formulario vertical</title>
+    <style>
+        .caja{background: #DDFFEE; border: 1px solid #C2D6D6}
+      
+   
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center align-items-center vh-100">
+             <div class="caja col-auto">
+                <div class="text-center mb-3 mt-3">
+                    <img src="../imagenes/vegaMedia.jpg" title="Vega Media" alt="C.E.S. Vega Media (Alguazas)" width="30%">
+                </div>
+                <h3 class="text-center mb-3">Inicia Sesion</h3>
+                <form>
+                    <div class="form-floating">
+                        <input type="text" id="user" class="form-control" placeholder="" required>
+                        <label for="user" class="form-label">Usuario</label>
+                        <small class="form-text text-muted">Ejemplo alumno@ces-vegamedia.es</small>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" id="contraseña" class="form-control" placeholder="" required>
+                        <label for="contraseña" class="form-label">Contraseña</label>
+                    </div>
+                    <div class="d-grid mb-3">
+                        <button class="btn btn-success btn-lg" type="submit">INICIAR SESION</button>
+                    </div>
+                    <div class="d-grid mb-3">
+                        <small class="form-text text-center text-muted">¿no tienes una cuenta?</small>
+                        <button class="btn btn-outline-success btn-lg">Crear Cuenta</button>
+                    </div>
+                </form>
+             </div>
+        </div>
+    </div>
+</body>
+</html>
