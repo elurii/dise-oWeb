@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <script src="../js/bootstrap.bundle.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>ALERTAS NORMALES</h1>
+    <div class="row">
+        <div class="col">
+            <div class="alert alert-success">
+                <strong>Success!</strong> Este cuadro de alerta indica una accion positiva o exitosa
+            </div>
+            <div class="alert alert-info">
+                <strong>Info!</strong> Este cuadro de alerta indica una cambio o una acción informativa neutral.
+            </div>
+            <div class="alert alert-warning">
+                <strong>Warning!</strong> Este cuadro de alerta indica una advertencia que podría necesitar atención.
+            </div>
+            <div class="alert alert-danger">
+                <strong>Danger!</strong> Este cuadro de alerta indica acción peligros o potencialmente negativa.
+            </div>
+            <div class="alert alert-primary">
+                <strong>Primary!</strong> Este cuadro de alerta indica una acción importante.
+            </div>
+            <div class="alert alert-secondary">
+                <strong>Secondary!</strong> Este cuadro de alerta indica una acción menos importante.
+            </div>
+            <div class="alert alert-light border-dark">
+                <strong>Light!</strong> Cuadro de alerta gris suave.
+            </div>
+            <div class="alert alert-dark">
+                <strong>Dark!</strong> Cuadro de alerta gris oscuro.
+            </div>
+        </div>
+        <hr>
+    </div>
+    <h1>ALERTAS CON LINKS</h1>
+    <hr>
+     <div class="row">
+        <div class="col">
+            <div class="alert alert-danger">
+                <strong>Peligro!</strong> Cuidado con el contenido.
+                <a href="#" class="alert-link"> Pinche aquí para más detalles </a>
+            </div>
+                <div class="alert alert-warning">
+                <strong>Advertencia!</strong> Debe leer <a href="#" class="alert-link">este mensaje</a> antes de continuar.
+            </div>
+        </div>
+    </div>
+    <hr>
+    <h1>ALERTA CON BOTON PARA CERRAR</h1>
+     <div class="row">
+        <div class="col">
+            <!--Con fade y show hace un efecto mas atenuante a la hora de cerrarse-->
+            <div class="alert alert-success alert-dismissible fade show">
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                Haz click sobre el símbolo "X" a la derecha para cerrarme.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
