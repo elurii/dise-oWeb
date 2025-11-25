@@ -1,0 +1,25 @@
+
+        body{
+            background-color: black;
+        
+        }
+        #caja2{
+            background-color: #212529;
+            color: white;
+            padding: 20px;
+        }
+        .card{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            background-color: #212529;
+            color: white;
+        }
+
+        #proyectos{
+            background-color: black;
+        }
+        #formulario{
+            background-color: #212529;
+            color: white;
+
+        }
