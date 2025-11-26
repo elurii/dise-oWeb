@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.js"></script>
+    <title>Tabs y Nav Bootstrap</title>
+    <style type="text/css">
+        .row{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="glosario_grid.html">Glosario Bootstrap</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#miNavbar" aria-controls="miNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="miNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_grid.html">Grid</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_imagenes.html">Imágenes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_tabla.html">Tablas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_textos.html">Textos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_horizontal.html">A. Horizontal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_vertical.html">A. Vertical</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_offsetting.html">Offsetting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_botones.html">Botones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_cards.html">Cards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_formularios.html">Formularios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_colores.html">Colores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_spacing.html">Spacing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_borders.html">Borders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_alerts_badges.html">Alerts y Badges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_flexbox.html">Flexbox</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_modals.html">Modals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_dropdowns.html">Dropdowns</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_collapse_accordion.html">Collapse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="glosario_tabs.html">Tabs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>TABS BÁSICAS (NAV-TABS)</h1>
+        <div class="row">
+            <div class="col">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Activa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Enlace</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Enlace</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Deshabilitada</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+
+        <h1>NAV PILLS</h1>
+        <div class="row">
+            <div class="col">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Activa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Enlace</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Enlace</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Deshabilitada</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+
+        <h1>NAV PILLS VERTICALES</h1>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Inicio</button>
+                    <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Perfil</button>
+                    <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Mensajes</button>
+                    <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Configuración</button>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+                        <h4>Inicio</h4>
+                        <p>Este es el contenido de la pestaña Inicio. Las pills verticales son perfectas para menús laterales donde el contenido se muestra en el lado derecho.</p>
+                        <p>Puedes incluir cualquier tipo de contenido HTML aquí: texto, imágenes, formularios, tablas, etc.</p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+                        <h4>Perfil</h4>
+                        <p>Información del perfil del usuario. Este contenido solo se muestra cuando seleccionas la pestaña Perfil.</p>
+                        <ul>
+                            <li>Nombre: Usuario Ejemplo</li>
+                            <li>Email: usuario@ejemplo.com</li>
+                            <li>Rol: Administrador</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
+                        <h4>Mensajes</h4>
+                        <p>Aquí se mostrarían los mensajes del usuario. Las tabs verticales son ideales para paneles de administración y aplicaciones complejas.</p>
+                        <div class="alert alert-info">Tienes 3 mensajes nuevos</div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">
+                        <h4>Configuración</h4>
+                        <p>Panel de configuración de la aplicación.</p>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">
+                                Recibir notificaciones
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>TABS CON CONTENIDO (TAB-PANE)</h1>
+        <div class="row">
+            <div class="col">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Inicio</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Perfil</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contacto</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false" disabled>Deshabilitada</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                        <div class="p-3">
+                            <h4>Bienvenido a la pestaña Inicio</h4>
+                            <p>Este es un ejemplo de tabs funcionales con contenido. Cada tab muestra diferente contenido cuando es seleccionada.</p>
+                            <p>Las tabs son ideales para organizar información relacionada en un espacio compacto sin recargar la página.</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                        <div class="p-3">
+                            <h4>Información del Perfil</h4>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Usuario Demo</h5>
+                                    <p class="card-text">Este es el contenido de la pestaña de perfil. Aquí podrías mostrar información del usuario, estadísticas, etc.</p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Email: demo@ejemplo.com</li>
+                                        <li class="list-group-item">Rol: Usuario</li>
+                                        <li class="list-group-item">Fecha de registro: 01/01/2024</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                        <div class="p-3">
+                            <h4>Formulario de Contacto</h4>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="nameInput" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="nameInput" placeholder="Tu nombre">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="emailInput" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="emailInput" placeholder="tu@email.com">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="messageInput" class="form-label">Mensaje</label>
+                                    <textarea class="form-control" id="messageInput" rows="3" placeholder="Tu mensaje"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
+                        <div class="p-3">
+                            <p>Esta pestaña está deshabilitada.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>TABS JUSTIFIED (FILL)</h1>
+        <div class="row">
+            <div class="col">
+                <h5>Nav Fill - Ocupan todo el ancho disponible</h5>
+                <ul class="nav nav-tabs nav-fill" id="fillTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="fill-home-tab" data-bs-toggle="tab" data-bs-target="#fill-home" type="button" role="tab" aria-controls="fill-home" aria-selected="true">Inicio</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="fill-about-tab" data-bs-toggle="tab" data-bs-target="#fill-about" type="button" role="tab" aria-controls="fill-about" aria-selected="false">Acerca de</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="fill-services-tab" data-bs-toggle="tab" data-bs-target="#fill-services" type="button" role="tab" aria-controls="fill-services" aria-selected="false">Servicios</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="fill-contact-tab" data-bs-toggle="tab" data-bs-target="#fill-contact" type="button" role="tab" aria-controls="fill-contact" aria-selected="false">Contacto</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="fillTabContent">
+                    <div class="tab-pane fade show active" id="fill-home" role="tabpanel" aria-labelledby="fill-home-tab" tabindex="0">
+                        <div class="p-3">
+                            <p>Contenido de Inicio. Con nav-fill, cada tab ocupa el mismo ancho, distribuyéndose uniformemente en el espacio disponible.</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="fill-about" role="tabpanel" aria-labelledby="fill-about-tab" tabindex="0">
+                        <div class="p-3">
+                            <p>Contenido de Acerca de. Las tabs se estiran para ocupar todo el ancho.</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="fill-services" role="tabpanel" aria-labelledby="fill-services-tab" tabindex="0">
+                        <div class="p-3">
+                            <p>Contenido de Servicios. Perfecto para diseños donde quieres que la navegación ocupe todo el ancho.</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="fill-contact" role="tabpanel" aria-labelledby="fill-contact-tab" tabindex="0">
+                        <div class="p-3">
+                            <p>Contenido de Contacto. Este tipo de navegación es muy común en interfaces modernas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>TABS JUSTIFIED</h1>
+        <div class="row">
+            <div class="col">
+                <h5>Nav Justified - Ocupan todo el ancho con igual distribución</h5>
+                <ul class="nav nav-tabs nav-justified" id="justifiedTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="just-products-tab" data-bs-toggle="tab" data-bs-target="#just-products" type="button" role="tab" aria-controls="just-products" aria-selected="true">Productos</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="just-pricing-tab" data-bs-toggle="tab" data-bs-target="#just-pricing" type="button" role="tab" aria-controls="just-pricing" aria-selected="false">Precios</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="just-support-tab" data-bs-toggle="tab" data-bs-target="#just-support" type="button" role="tab" aria-controls="just-support" aria-selected="false">Soporte</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="justifiedTabContent">
+                    <div class="tab-pane fade show active" id="just-products" role="tabpanel" aria-labelledby="just-products-tab" tabindex="0">
+                        <div class="p-3">
+                            <h5>Nuestros Productos</h5>
+                            <p>Con nav-justified, las tabs ocupan todo el ancho disponible con una distribución equitativa. Esto es similar a nav-fill, pero con comportamiento más estricto.</p>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Producto 1</h6>
+                                            <p class="card-text">Descripción del producto 1.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Producto 2</h6>
+                                            <p class="card-text">Descripción del producto 2.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Producto 3</h6>
+                                            <p class="card-text">Descripción del producto 3.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="just-pricing" role="tabpanel" aria-labelledby="just-pricing-tab" tabindex="0">
+                        <div class="p-3">
+                            <h5>Planes y Precios</h5>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Plan</th>
+                                        <th>Precio</th>
+                                        <th>Características</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Básico</td>
+                                        <td>$9.99/mes</td>
+                                        <td>Características básicas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pro</td>
+                                        <td>$19.99/mes</td>
+                                        <td>Todas las características</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Enterprise</td>
+                                        <td>Contactar</td>
+                                        <td>Soluciones personalizadas</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="just-support" role="tabpanel" aria-labelledby="just-support-tab" tabindex="0">
+                        <div class="p-3">
+                            <h5>Soporte Técnico</h5>
+                            <div class="alert alert-info">
+                                Nuestro equipo de soporte está disponible 24/7 para ayudarte.
+                            </div>
+                            <p><strong>Contacto:</strong> soporte@ejemplo.com</p>
+                            <p><strong>Teléfono:</strong> +1 (555) 123-4567</p>
+                            <p><strong>Chat en vivo:</strong> Disponible en la esquina inferior derecha</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>NAV PILLS CON CONTENIDO</h1>
+        <div class="row">
+            <div class="col">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-overview-tab" data-bs-toggle="pill" data-bs-target="#pills-overview" type="button" role="tab" aria-controls="pills-overview" aria-selected="true">Vista General</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-features-tab" data-bs-toggle="pill" data-bs-target="#pills-features" type="button" role="tab" aria-controls="pills-features" aria-selected="false">Características</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-reviews-tab" data-bs-toggle="pill" data-bs-target="#pills-reviews" type="button" role="tab" aria-controls="pills-reviews" aria-selected="false">Reseñas</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-overview" role="tabpanel" aria-labelledby="pills-overview-tab" tabindex="0">
+                        <h5>Vista General</h5>
+                        <p>Las nav pills ofrecen un estilo alternativo a las tabs tradicionales. Son más redondeadas y modernas.</p>
+                        <p>Son perfectas para interfaces donde quieres un look más suave y menos formal que las tabs estándar.</p>
+                    </div>
+                    <div class="tab-pane fade" id="pills-features" role="tabpanel" aria-labelledby="pills-features-tab" tabindex="0">
+                        <h5>Características Principales</h5>
+                        <ul>
+                            <li>Diseño moderno y redondeado</li>
+                            <li>Fácil de implementar</li>
+                            <li>Totalmente responsive</li>
+                            <li>Personalizable con CSS</li>
+                            <li>Compatible con JavaScript de Bootstrap</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="pills-reviews" role="tabpanel" aria-labelledby="pills-reviews-tab" tabindex="0">
+                        <h5>Reseñas de Usuarios</h5>
+                        <div class="card mb-2">
+                            <div class="card-body">
+                                <h6 class="card-title">Juan Pérez</h6>
+                                <p class="card-text">"Excelente componente, muy fácil de usar y se ve genial."</p>
+                                <small class="text-muted">Hace 2 días</small>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h6 class="card-title">María García</h6>
+                                <p class="card-text">"Las pills dan un toque más moderno a mi sitio web. Muy recomendable."</p>
+                                <small class="text-muted">Hace 1 semana</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

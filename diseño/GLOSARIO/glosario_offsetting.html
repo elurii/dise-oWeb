@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.js"></script>
+    <title>Document</title>
+    <style type="text/css">
+        .row{
+            background: #E8E8E8;
+            margin-top: 40px;
+        }
+
+        .columna{
+            background: #F2F2F2;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #4d5061
+        }
+
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="glosario_grid.html">Glosario Bootstrap</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#miNavbar" aria-controls="miNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="miNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_grid.html">Grid</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_imagenes.html">Imágenes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_tabla.html">Tablas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_textos.html">Textos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_horizontal.html">A. Horizontal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_vertical.html">A. Vertical</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="glosario_offsetting.html">Offsetting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_botones.html">Botones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_cards.html">Cards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_formularios.html">Formularios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_colores.html">Colores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_spacing.html">Spacing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_borders.html">Borders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_alerts_badges.html">Alerts y Badges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_flexbox.html">Flexbox</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_modals.html">Modals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_dropdowns.html">Dropdowns</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_collapse_accordion.html">Collapse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_tabs.html">Tabs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>SEPARACION MEDIANTE OFFSET</h1>
+        <div class="row">
+            <div class="columna col-2"> Columna 1</div>
+        </div>
+        <div class="row">
+            <div class="columna col-2 offset-2"> Columna 4</div>
+        </div>
+        <hr>
+         <h1>SEPARACION MEDIANTE OFFSET PARTE 2</h1>
+         <div class="row">
+            <div class="columna col-2 offset-10"> Columna </div>
+        </div>
+        <div class="row">
+            <div class="columna col-4 offset-4"> Columna </div>
+        </div>
+        <hr>
+        <h1>SEPARACION MEDIANTE OFFSET PARTE 3</h1>
+        <div class="row">
+            <div class="columna col-md-4 offset-md-1 col-sm-4 offset-sm-0"> Columna 1 </div>
+            <div class="columna col-md-4 offset-md-2 col-sm-4 offset-sm-1"> Columna 2</div>
+        </div>
+        <hr>
+         <div class="container-fluid">
+            <h1>TAMAÑOS RESPONSIVE</h1>
+        <div class="row">
+            <div class="col d-block d-sm-none">Pantalla de tamaño extra pequeño (xs) </div>
+            <div class="col d-none d-sm-block d-md-none"> Pantalla tamaño pequeño (sm)</div>
+            <div class="col d-none d-md-block d-lg-none"> Pantalla de tamaño mediano (md) </div>
+            <div class="col d-none d-lg-block d-xl-none"> Pantalla de tamaño grande (lg) </div>
+            <div class="col d-none d-xl-block d-xxl-none"> Pantalla de tamaño extra grande (xl)</div>
+            <div class="col d-none d-xxl-block"> Pantalla de tamaño extra extra grande (xxl) </div>
+        </div>
+    </div>
+    </div>
+    
+    
+</body>
+</html>

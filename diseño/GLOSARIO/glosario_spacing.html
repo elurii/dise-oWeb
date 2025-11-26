@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.js"></script>
+    <title>Spacing Bootstrap</title>
+    <style type="text/css">
+        .row{
+            margin-top: 20px;
+        }
+        .demo-box{
+            background: #e9ecef;
+            border: 1px solid #dee2e6;
+            padding: 10px;
+        }
+        .demo-inner{
+            background: #6c757d;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="glosario_grid.html">Glosario Bootstrap</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#miNavbar" aria-controls="miNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="miNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_grid.html">Grid</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_imagenes.html">Imágenes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_tabla.html">Tablas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_textos.html">Textos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_horizontal.html">A. Horizontal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_vertical.html">A. Vertical</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_offsetting.html">Offsetting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_botones.html">Botones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_cards.html">Cards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_formularios.html">Formularios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_colores.html">Colores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="glosario_spacing.html">Spacing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_borders.html">Borders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_alerts_badges.html">Alerts y Badges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_flexbox.html">Flexbox</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_modals.html">Modals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_dropdowns.html">Dropdowns</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_collapse_accordion.html">Collapse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_tabs.html">Tabs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>MARGIN - TODOS LOS LADOS</h1>
+        <div class="row">
+            <div class="col">
+                <p>Las clases de margin van desde <code>m-0</code> (sin margen) hasta <code>m-5</code> (mayor margen)</p>
+                <div class="demo-box m-0">m-0 - Sin margin</div>
+                <div class="demo-box m-1">m-1 - Margin 0.25rem</div>
+                <div class="demo-box m-2">m-2 - Margin 0.5rem</div>
+                <div class="demo-box m-3">m-3 - Margin 1rem</div>
+                <div class="demo-box m-4">m-4 - Margin 1.5rem</div>
+                <div class="demo-box m-5">m-5 - Margin 3rem</div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>PADDING - TODOS LOS LADOS</h1>
+        <div class="row">
+            <div class="col">
+                <p>Las clases de padding van desde <code>p-0</code> (sin relleno) hasta <code>p-5</code> (mayor relleno)</p>
+                <div class="demo-box">
+                    <div class="demo-inner p-0">p-0 - Sin padding</div>
+                </div>
+                <div class="demo-box">
+                    <div class="demo-inner p-1">p-1 - Padding 0.25rem</div>
+                </div>
+                <div class="demo-box">
+                    <div class="demo-inner p-2">p-2 - Padding 0.5rem</div>
+                </div>
+                <div class="demo-box">
+                    <div class="demo-inner p-3">p-3 - Padding 1rem</div>
+                </div>
+                <div class="demo-box">
+                    <div class="demo-inner p-4">p-4 - Padding 1.5rem</div>
+                </div>
+                <div class="demo-box">
+                    <div class="demo-inner p-5">p-5 - Padding 3rem</div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>MARGIN SUPERIOR (TOP)</h1>
+        <div class="row">
+            <div class="col">
+                <div class="demo-box mt-0">mt-0 - Sin margin top</div>
+                <div class="demo-box mt-1">mt-1 - Margin top pequeño</div>
+                <div class="demo-box mt-2">mt-2 - Margin top</div>
+                <div class="demo-box mt-3">mt-3 - Margin top medio</div>
+                <div class="demo-box mt-4">mt-4 - Margin top grande</div>
+                <div class="demo-box mt-5">mt-5 - Margin top muy grande</div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>MARGIN INFERIOR (BOTTOM)</h1>
+        <div class="row">
+            <div class="col">
+                <div class="demo-box mb-0">mb-0 - Sin margin bottom</div>
+                <div class="demo-box mb-1">mb-1 - Margin bottom pequeño</div>
+                <div class="demo-box mb-2">mb-2 - Margin bottom</div>
+                <div class="demo-box mb-3">mb-3 - Margin bottom medio</div>
+                <div class="demo-box mb-4">mb-4 - Margin bottom grande</div>
+                <div class="demo-box mb-5">mb-5 - Margin bottom muy grande</div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>MARGIN IZQUIERDO Y DERECHO (START/END)</h1>
+        <div class="row">
+            <div class="col">
+                <h2>Margin Start (Izquierdo)</h2>
+                <div class="demo-box ms-0">ms-0 - Sin margin start</div>
+                <div class="demo-box ms-3">ms-3 - Margin start</div>
+                <div class="demo-box ms-5">ms-5 - Margin start grande</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2>Margin End (Derecho)</h2>
+                <div class="demo-box me-0">me-0 - Sin margin end</div>
+                <div class="demo-box me-3">me-3 - Margin end</div>
+                <div class="demo-box me-5">me-5 - Margin end grande</div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>MARGIN HORIZONTAL (X) Y VERTICAL (Y)</h1>
+        <div class="row">
+            <div class="col">
+                <h2>Margin Horizontal (mx) - Izquierdo y Derecho</h2>
+                <div class="demo-box mx-0">mx-0 - Sin margin horizontal</div>
+                <div class="demo-box mx-3">mx-3 - Margin horizontal medio</div>
+                <div class="demo-box mx-5">mx-5 - Margin horizontal grande</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2>Margin Vertical (my) - Superior e Inferior</h2>
+                <div class="demo-box my-0">my-0 - Sin margin vertical</div>
+                <div class="demo-box my-3">my-3 - Margin vertical medio</div>
+                <div class="demo-box my-5">my-5 - Margin vertical grande</div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>PADDING SUPERIOR, INFERIOR, IZQUIERDO, DERECHO</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Padding Top</h2>
+                <div class="demo-box">
+                    <div class="demo-inner pt-0">pt-0</div>
+                </div>
+                <div class="demo-box">
+                    <div class="demo-inner pt-3">pt-3</div>
+                </div>
+                <div class="demo-box">
+                    <div class="demo-inner pt-5">pt-5</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2>Padding Bottom</h2>
+                <div class="demo-box">
+                    <div class="demo-inner pb-0">pb-0</div>
+                </div>
+                <div class="demo-box">
+                    <div class="demo-inner pb-3">pb-3</div>
+                </div>
+                <div class="demo-box">
+                    <div class="demo-inner pb-5">pb-5</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Padding Start (Izquierdo)</h2>
+                <div class="demo-box">
+                    <div class="demo-inner ps-0">ps-0</div>
+                </div>
+                <div class="demo-box">
+                    <div class="demo-inner ps-3">ps-3</div>
+                </div>
+                <div class="demo-box">
+                    <div class="demo-inner ps-5">ps-5</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2>Padding End (Derecho)</h2>
+                <div class="demo-box">
+                    <div class="demo-inner pe-0">pe-0</div>
+                </div>
+                <div class="demo-box">
+                    <div class="demo-inner pe-3">pe-3</div>
+                </div>
+                <div class="demo-box">
+                    <div class="demo-inner pe-5">pe-5</div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>PADDING HORIZONTAL (X) Y VERTICAL (Y)</h1>
+        <div class="row">
+            <div class="col">
+                <h2>Padding Horizontal (px)</h2>
+                <div class="demo-box">
+                    <div class="demo-inner px-0">px-0 - Sin padding horizontal</div>
+                </div>
+                <div class="demo-box">
+                    <div class="demo-inner px-3">px-3 - Padding horizontal medio</div>
+                </div>
+                <div class="demo-box">
+                    <div class="demo-inner px-5">px-5 - Padding horizontal grande</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2>Padding Vertical (py)</h2>
+                <div class="demo-box">
+                    <div class="demo-inner py-0">py-0 - Sin padding vertical</div>
+                </div>
+                <div class="demo-box">
+                    <div class="demo-inner py-3">py-3 - Padding vertical medio</div>
+                </div>
+                <div class="demo-box">
+                    <div class="demo-inner py-5">py-5 - Padding vertical grande</div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>MARGIN AUTO</h1>
+        <div class="row">
+            <div class="col">
+                <p>Útil para centrar elementos</p>
+                <div class="demo-box mx-auto" style="width: 200px;">mx-auto - Centrado horizontal</div>
+                <div class="demo-box ms-auto" style="width: 200px;">ms-auto - Alineado a la derecha</div>
+                <div class="demo-box me-auto" style="width: 200px;">me-auto - Alineado a la izquierda</div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>MARGIN NEGATIVO</h1>
+        <div class="row">
+            <div class="col">
+                <p>Permite crear solapamientos</p>
+                <div class="demo-box mt-n1">mt-n1 - Margin top negativo</div>
+                <div class="demo-box mt-n3">mt-n3 - Margin top negativo mayor</div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>SPACING RESPONSIVE</h1>
+        <div class="row">
+            <div class="col">
+                <p>Los spacing pueden ser responsive usando breakpoints: sm, md, lg, xl, xxl</p>
+                <div class="demo-box mt-3 mt-md-5">
+                    mt-3 mt-md-5 - Margin top 3 en móvil, 5 en desktop
+                </div>
+                <div class="demo-box">
+                    <div class="demo-inner p-2 p-md-4">
+                        p-2 p-md-4 - Padding 2 en móvil, 4 en desktop
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>GAP (ESPACIADO EN FLEXBOX Y GRID)</h1>
+        <div class="row">
+            <div class="col">
+                <h2>Gap entre elementos flex</h2>
+                <div class="d-flex gap-0">
+                    <div class="demo-box">Gap 0</div>
+                    <div class="demo-box">Gap 0</div>
+                    <div class="demo-box">Gap 0</div>
+                </div>
+                <br>
+                <div class="d-flex gap-2">
+                    <div class="demo-box">Gap 2</div>
+                    <div class="demo-box">Gap 2</div>
+                    <div class="demo-box">Gap 2</div>
+                </div>
+                <br>
+                <div class="d-flex gap-4">
+                    <div class="demo-box">Gap 4</div>
+                    <div class="demo-box">Gap 4</div>
+                    <div class="demo-box">Gap 4</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

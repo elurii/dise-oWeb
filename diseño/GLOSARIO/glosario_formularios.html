@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.js"></script>
+    <title>Formularios Bootstrap</title>
+    <style type="text/css">
+        .row{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="glosario_grid.html">Glosario Bootstrap</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#miNavbar" aria-controls="miNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="miNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_grid.html">Grid</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_imagenes.html">Imágenes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_tabla.html">Tablas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_textos.html">Textos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_horizontal.html">A. Horizontal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_vertical.html">A. Vertical</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_offsetting.html">Offsetting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_botones.html">Botones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_cards.html">Cards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="glosario_formularios.html">Formularios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_colores.html">Colores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_spacing.html">Spacing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_borders.html">Borders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_alerts_badges.html">Alerts y Badges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_flexbox.html">Flexbox</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_modals.html">Modals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_dropdowns.html">Dropdowns</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_collapse_accordion.html">Collapse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_tabs.html">Tabs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>INPUTS BÁSICOS</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="inputEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="nombre@ejemplo.com">
+                </div>
+                <div class="mb-3">
+                    <label for="inputPassword" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="inputPassword">
+                </div>
+                <div class="mb-3">
+                    <label for="inputText" class="form-label">Texto</label>
+                    <input type="text" class="form-control" id="inputText" placeholder="Texto normal">
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>TAMAÑOS DE INPUTS</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="inputLarge" class="form-label">Input Grande</label>
+                    <input class="form-control form-control-lg" type="text" placeholder="Input grande" id="inputLarge">
+                </div>
+                <div class="mb-3">
+                    <label for="inputNormal" class="form-label">Input Normal</label>
+                    <input class="form-control" type="text" placeholder="Input normal" id="inputNormal">
+                </div>
+                <div class="mb-3">
+                    <label for="inputSmall" class="form-label">Input Pequeño</label>
+                    <input class="form-control form-control-sm" type="text" placeholder="Input pequeño" id="inputSmall">
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>TEXTAREA Y SELECT</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="textareaExample" class="form-label">Textarea</label>
+                    <textarea class="form-control" id="textareaExample" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="selectExample" class="form-label">Select</label>
+                    <select class="form-select" id="selectExample">
+                        <option selected>Elige una opción</option>
+                        <option value="1">Opción 1</option>
+                        <option value="2">Opción 2</option>
+                        <option value="3">Opción 3</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="selectMultiple" class="form-label">Select Múltiple</label>
+                    <select class="form-select" id="selectMultiple" multiple>
+                        <option>Opción 1</option>
+                        <option>Opción 2</option>
+                        <option>Opción 3</option>
+                        <option>Opción 4</option>
+                        <option>Opción 5</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>CHECKBOXES</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="check1">
+                    <label class="form-check-label" for="check1">
+                        Checkbox 1
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="check2" checked>
+                    <label class="form-check-label" for="check2">
+                        Checkbox 2 (checked)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="check3" disabled>
+                    <label class="form-check-label" for="check3">
+                        Checkbox 3 (disabled)
+                    </label>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>RADIO BUTTONS</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radioOptions" id="radio1" checked>
+                    <label class="form-check-label" for="radio1">
+                        Opción 1
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radioOptions" id="radio2">
+                    <label class="form-check-label" for="radio2">
+                        Opción 2
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radioOptions" id="radio3" disabled>
+                    <label class="form-check-label" for="radio3">
+                        Opción 3 (disabled)
+                    </label>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>SWITCHES</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="switch1">
+                    <label class="form-check-label" for="switch1">Switch normal</label>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="switch2" checked>
+                    <label class="form-check-label" for="switch2">Switch checked</label>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="switch3" disabled>
+                    <label class="form-check-label" for="switch3">Switch disabled</label>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>INPUT GROUPS</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="inputUsername" class="form-label">Username</label>
+                    <div class="input-group">
+                        <span class="input-group-text">@</span>
+                        <input type="text" class="form-control" id="inputUsername" placeholder="Username">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="inputUrl" class="form-label">URL</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="inputUrl" placeholder="Tu URL">
+                        <span class="input-group-text">.com</span>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="inputPrice" class="form-label">Precio</label>
+                    <div class="input-group">
+                        <span class="input-group-text">$</span>
+                        <input type="text" class="form-control" id="inputPrice">
+                        <span class="input-group-text">.00</span>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="inputButton" class="form-label">Con Botón</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="inputButton" placeholder="Buscar...">
+                        <button class="btn btn-primary" type="button">Buscar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>VALIDACIÓN</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="inputValid" class="form-label">Input Válido</label>
+                    <input type="text" class="form-control is-valid" id="inputValid" value="Entrada válida">
+                    <div class="valid-feedback">
+                        ¡Se ve bien!
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="inputInvalid" class="form-label">Input Inválido</label>
+                    <input type="text" class="form-control is-invalid" id="inputInvalid" value="Entrada inválida">
+                    <div class="invalid-feedback">
+                        Por favor ingresa un valor válido.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>FLOATING LABELS</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="nombre@ejemplo.com">
+                    <label for="floatingInput">Email</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Contraseña</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="Deja un comentario aquí" id="floatingTextarea" style="height: 100px"></textarea>
+                    <label for="floatingTextarea">Comentarios</label>
+                </div>
+                <div class="form-floating">
+                    <select class="form-select" id="floatingSelect">
+                        <option selected>Elige una opción</option>
+                        <option value="1">Opción 1</option>
+                        <option value="2">Opción 2</option>
+                        <option value="3">Opción 3</option>
+                    </select>
+                    <label for="floatingSelect">Selecciona</label>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>FORMULARIO COMPLETO</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label for="formEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="formEmail">
+                    </div>
+                    <div class="mb-3">
+                        <label for="formPassword" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="formPassword">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="formCheck">
+                        <label class="form-check-label" for="formCheck">
+                            Recordarme
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <hr>
+
+        <h1>INPUT DESHABILITADO Y READONLY</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="inputDisabled" class="form-label">Input Deshabilitado</label>
+                    <input type="text" class="form-control" id="inputDisabled" placeholder="Input deshabilitado" disabled>
+                </div>
+                <div class="mb-3">
+                    <label for="inputReadonly" class="form-label">Input Readonly</label>
+                    <input type="text" class="form-control" id="inputReadonly" value="Solo lectura" readonly>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

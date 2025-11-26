@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.js"></script>
+    <title>Alerts y Badges Bootstrap</title>
+    <style type="text/css">
+        .row{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="glosario_grid.html">Glosario Bootstrap</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#miNavbar" aria-controls="miNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="miNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_grid.html">Grid</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_imagenes.html">Imágenes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_tabla.html">Tablas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_textos.html">Textos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_horizontal.html">A. Horizontal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_vertical.html">A. Vertical</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_offsetting.html">Offsetting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_botones.html">Botones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_cards.html">Cards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_formularios.html">Formularios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_colores.html">Colores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_spacing.html">Spacing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_borders.html">Borders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="glosario_alerts_badges.html">Alerts y Badges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_flexbox.html">Flexbox</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_modals.html">Modals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_dropdowns.html">Dropdowns</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_collapse_accordion.html">Collapse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_tabs.html">Tabs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>ALERTS BÁSICAS</h1>
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-primary" role="alert">
+                    Alerta Primary - Información importante
+                </div>
+                <div class="alert alert-secondary" role="alert">
+                    Alerta Secondary - Información secundaria
+                </div>
+                <div class="alert alert-success" role="alert">
+                    Alerta Success - Operación exitosa
+                </div>
+                <div class="alert alert-danger" role="alert">
+                    Alerta Danger - Error o peligro
+                </div>
+                <div class="alert alert-warning" role="alert">
+                    Alerta Warning - Advertencia
+                </div>
+                <div class="alert alert-info" role="alert">
+                    Alerta Info - Información general
+                </div>
+                <div class="alert alert-light" role="alert">
+                    Alerta Light - Fondo claro
+                </div>
+                <div class="alert alert-dark" role="alert">
+                    Alerta Dark - Fondo oscuro
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>ALERTS CON ENLACES</h1>
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-primary" role="alert">
+                    Alerta con <a href="#" class="alert-link">un enlace</a>.
+                </div>
+                <div class="alert alert-success" role="alert">
+                    Operación exitosa. <a href="#" class="alert-link">Ver detalles</a>.
+                </div>
+                <div class="alert alert-danger" role="alert">
+                    Error detectado. <a href="#" class="alert-link">Más información</a>.
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>ALERTS CON CONTENIDO ADICIONAL</h1>
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-success" role="alert">
+                    <h4 class="alert-heading">Bien hecho!</h4>
+                    <p>Has completado exitosamente la operación. Todo ha funcionado correctamente.</p>
+                    <hr>
+                    <p class="mb-0">Puedes continuar con el siguiente paso cuando estés listo.</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>ALERTS DISMISSIBLE (CON BOTÓN DE CIERRE)</h1>
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong>Atención!</strong> Esta alerta puede cerrarse haciendo clic en la X.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <div class="alert alert-info alert-dismissible fade show" role="alert">
+                    <strong>Información:</strong> Mensaje informativo con botón de cierre.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <strong>Error!</strong> Algo ha salido mal.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>BADGES BÁSICOS</h1>
+        <div class="row">
+            <div class="col">
+                <h2>Badges con Colores</h2>
+                <span class="badge bg-primary">Primary</span>
+                <span class="badge bg-secondary">Secondary</span>
+                <span class="badge bg-success">Success</span>
+                <span class="badge bg-danger">Danger</span>
+                <span class="badge bg-warning text-dark">Warning</span>
+                <span class="badge bg-info text-dark">Info</span>
+                <span class="badge bg-light text-dark">Light</span>
+                <span class="badge bg-dark">Dark</span>
+            </div>
+        </div>
+        <hr>
+
+        <h1>BADGES REDONDEADOS (PILLS)</h1>
+        <div class="row">
+            <div class="col">
+                <span class="badge rounded-pill bg-primary">Primary</span>
+                <span class="badge rounded-pill bg-secondary">Secondary</span>
+                <span class="badge rounded-pill bg-success">Success</span>
+                <span class="badge rounded-pill bg-danger">Danger</span>
+                <span class="badge rounded-pill bg-warning text-dark">Warning</span>
+                <span class="badge rounded-pill bg-info text-dark">Info</span>
+                <span class="badge rounded-pill bg-light text-dark">Light</span>
+                <span class="badge rounded-pill bg-dark">Dark</span>
+            </div>
+        </div>
+        <hr>
+
+        <h1>BADGES EN ENCABEZADOS</h1>
+        <div class="row">
+            <div class="col">
+                <h1>Título h1 <span class="badge bg-secondary">Nuevo</span></h1>
+                <h2>Título h2 <span class="badge bg-success">Actualizado</span></h2>
+                <h3>Título h3 <span class="badge bg-primary">Popular</span></h3>
+                <h4>Título h4 <span class="badge bg-danger">Importante</span></h4>
+                <h5>Título h5 <span class="badge bg-warning text-dark">Beta</span></h5>
+                <h6>Título h6 <span class="badge bg-info text-dark">Versión 2.0</span></h6>
+            </div>
+        </div>
+        <hr>
+
+        <h1>BADGES EN BOTONES</h1>
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-primary">
+                    Notificaciones <span class="badge bg-danger">4</span>
+                </button>
+                <button type="button" class="btn btn-success">
+                    Mensajes <span class="badge bg-light text-dark">9</span>
+                </button>
+                <button type="button" class="btn btn-secondary">
+                    Carrito <span class="badge bg-warning text-dark">2</span>
+                </button>
+            </div>
+        </div>
+        <hr>
+
+        <h1>BADGES COMO CONTADORES</h1>
+        <div class="row">
+            <div class="col">
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Mensajes
+                        <span class="badge bg-primary rounded-pill">14</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Notificaciones
+                        <span class="badge bg-danger rounded-pill">2</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Tareas pendientes
+                        <span class="badge bg-success rounded-pill">7</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+
+        <h1>BADGES DE POSICIÓN</h1>
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-primary position-relative">
+                    Inbox
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        99+
+                        <span class="visually-hidden">mensajes no leídos</span>
+                    </span>
+                </button>
+                <button type="button" class="btn btn-secondary position-relative">
+                    Perfil
+                    <span class="position-absolute top-0 start-100 translate-middle p-2 bg-success border border-light rounded-circle">
+                        <span class="visually-hidden">Nuevas alertas</span>
+                    </span>
+                </button>
+            </div>
+        </div>
+        <hr>
+
+        <h1>COMBINACIONES: ALERTS Y BADGES</h1>
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-info" role="alert">
+                    <h5>Información del Sistema <span class="badge bg-primary">3 nuevas</span></h5>
+                    <p>Tienes notificaciones pendientes. <span class="badge bg-danger rounded-pill">Urgente</span></p>
+                </div>
+                <div class="alert alert-success" role="alert">
+                    <h5>Tareas Completadas <span class="badge bg-light text-dark">5/5</span></h5>
+                    <p>Has completado todas tus tareas del día. <span class="badge bg-success">Excelente</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

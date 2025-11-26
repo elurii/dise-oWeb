@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.js"></script>
+    <title>Dropdowns Bootstrap</title>
+    <style type="text/css">
+        .row{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="glosario_grid.html">Glosario Bootstrap</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#miNavbar" aria-controls="miNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="miNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_grid.html">Grid</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_imagenes.html">Imágenes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_tabla.html">Tablas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_textos.html">Textos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_horizontal.html">A. Horizontal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_vertical.html">A. Vertical</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_offsetting.html">Offsetting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_botones.html">Botones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_cards.html">Cards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_formularios.html">Formularios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_colores.html">Colores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_spacing.html">Spacing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_borders.html">Borders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_alerts_badges.html">Alerts y Badges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_flexbox.html">Flexbox</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_modals.html">Modals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="glosario_dropdowns.html">Dropdowns</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_collapse_accordion.html">Collapse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_tabs.html">Tabs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>DROPDOWN BÁSICO</h1>
+        <div class="row">
+            <div class="col">
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown básico
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Acción 1</a></li>
+                        <li><a class="dropdown-item" href="#">Acción 2</a></li>
+                        <li><a class="dropdown-item" href="#">Acción 3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>DROPDOWNS CON DIFERENTES DIRECCIONES</h1>
+        <div class="row">
+            <div class="col-md-3">
+                <h5>Dropup</h5>
+                <div class="btn-group dropup">
+                    <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropup
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Opción 1</a></li>
+                        <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                        <li><a class="dropdown-item" href="#">Opción 3</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <h5>Dropend</h5>
+                <div class="btn-group dropend">
+                    <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropend
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Opción 1</a></li>
+                        <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                        <li><a class="dropdown-item" href="#">Opción 3</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <h5>Dropstart</h5>
+                <div class="btn-group dropstart">
+                    <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropstart
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Opción 1</a></li>
+                        <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                        <li><a class="dropdown-item" href="#">Opción 3</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <h5>Dropdown (abajo)</h5>
+                <div class="dropdown">
+                    <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Opción 1</a></li>
+                        <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                        <li><a class="dropdown-item" href="#">Opción 3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>DROPDOWNS CON DIVIDERS Y HEADERS</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Con Dividers</h5>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown con dividers
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Acción 1</a></li>
+                        <li><a class="dropdown-item" href="#">Acción 2</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Acción 3</a></li>
+                        <li><a class="dropdown-item" href="#">Acción 4</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <h5>Con Headers</h5>
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown con headers
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><h6 class="dropdown-header">Sección 1</h6></li>
+                        <li><a class="dropdown-item" href="#">Opción 1.1</a></li>
+                        <li><a class="dropdown-item" href="#">Opción 1.2</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><h6 class="dropdown-header">Sección 2</h6></li>
+                        <li><a class="dropdown-item" href="#">Opción 2.1</a></li>
+                        <li><a class="dropdown-item" href="#">Opción 2.2</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>DROPDOWNS EN BOTONES DE DIFERENTES COLORES</h1>
+        <div class="row">
+            <div class="col">
+                <div class="dropdown d-inline me-2">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        Primary
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Acción</a></li>
+                        <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown d-inline me-2">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        Secondary
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Acción</a></li>
+                        <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown d-inline me-2">
+                    <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        Success
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Acción</a></li>
+                        <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown d-inline me-2">
+                    <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        Danger
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Acción</a></li>
+                        <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown d-inline me-2">
+                    <button class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        Warning
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Acción</a></li>
+                        <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown d-inline me-2">
+                    <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        Info
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Acción</a></li>
+                        <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown d-inline me-2">
+                    <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        Dark
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Acción</a></li>
+                        <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>SPLIT BUTTON DROPDOWNS</h1>
+        <div class="row">
+            <div class="col">
+                <div class="btn-group me-2">
+                    <button type="button" class="btn btn-primary">Primary</button>
+                    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Acción</a></li>
+                        <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Algo más</a></li>
+                    </ul>
+                </div>
+
+                <div class="btn-group me-2">
+                    <button type="button" class="btn btn-success">Success</button>
+                    <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Acción</a></li>
+                        <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Algo más</a></li>
+                    </ul>
+                </div>
+
+                <div class="btn-group me-2">
+                    <button type="button" class="btn btn-danger">Danger</button>
+                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Acción</a></li>
+                        <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Algo más</a></li>
+                    </ul>
+                </div>
+
+                <div class="btn-group me-2">
+                    <button type="button" class="btn btn-warning">Warning</button>
+                    <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Acción</a></li>
+                        <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Algo más</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h5>Split Button con Dropup</h5>
+                <div class="btn-group dropup">
+                    <button type="button" class="btn btn-info">Info Dropup</button>
+                    <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Acción</a></li>
+                        <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Algo más</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>DROPDOWN CON ITEMS ACTIVOS Y DESHABILITADOS</h1>
+        <div class="row">
+            <div class="col">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Estados de items
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Item normal</a></li>
+                        <li><a class="dropdown-item active" href="#">Item activo</a></li>
+                        <li><a class="dropdown-item" href="#">Otro item normal</a></li>
+                        <li><a class="dropdown-item disabled" href="#">Item deshabilitado</a></li>
+                        <li><a class="dropdown-item" href="#">Último item</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>DROPDOWN CON TEXTO Y FORMULARIO</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Con texto</h5>
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown con texto
+                    </button>
+                    <div class="dropdown-menu p-4" style="max-width: 300px;">
+                        <p>Este es un ejemplo de dropdown que contiene texto en lugar de enlaces. Puedes agregar cualquier contenido aquí.</p>
+                        <p class="mb-0">Incluso múltiples párrafos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <h5>Con formulario</h5>
+                <div class="dropdown">
+                    <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown con formulario
+                    </button>
+                    <form class="dropdown-menu p-4" style="min-width: 300px;">
+                        <div class="mb-3">
+                            <label for="emailInput" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="emailInput" placeholder="email@ejemplo.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="passwordInput" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="passwordInput" placeholder="Contraseña">
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="recordarCheck">
+                                <label class="form-check-label" for="recordarCheck">
+                                    Recordarme
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

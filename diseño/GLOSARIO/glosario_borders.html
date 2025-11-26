@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.js"></script>
+    <title>Borders Bootstrap</title>
+    <style type="text/css">
+        .row{
+            margin-top: 20px;
+        }
+        .demo-box{
+            background: #e9ecef;
+            padding: 20px;
+            margin: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="glosario_grid.html">Glosario Bootstrap</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#miNavbar" aria-controls="miNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="miNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_grid.html">Grid</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_imagenes.html">Imágenes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_tabla.html">Tablas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_textos.html">Textos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_horizontal.html">A. Horizontal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_vertical.html">A. Vertical</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_offsetting.html">Offsetting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_botones.html">Botones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_cards.html">Cards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_formularios.html">Formularios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_colores.html">Colores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_spacing.html">Spacing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="glosario_borders.html">Borders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_alerts_badges.html">Alerts y Badges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_flexbox.html">Flexbox</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_modals.html">Modals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_dropdowns.html">Dropdowns</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_collapse_accordion.html">Collapse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_tabs.html">Tabs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>BORDES BÁSICOS</h1>
+        <div class="row">
+            <div class="col">
+                <span class="demo-box border">border - Borde en todos los lados</span>
+                <span class="demo-box border-top">border-top - Solo arriba</span>
+                <span class="demo-box border-end">border-end - Solo derecha</span>
+                <span class="demo-box border-bottom">border-bottom - Solo abajo</span>
+                <span class="demo-box border-start">border-start - Solo izquierda</span>
+            </div>
+        </div>
+        <hr>
+
+        <h1>ELIMINAR BORDES</h1>
+        <div class="row">
+            <div class="col">
+                <span class="demo-box border border-0">border-0 - Sin bordes</span>
+                <span class="demo-box border border-top-0">border-top-0 - Sin borde arriba</span>
+                <span class="demo-box border border-end-0">border-end-0 - Sin borde derecha</span>
+                <span class="demo-box border border-bottom-0">border-bottom-0 - Sin borde abajo</span>
+                <span class="demo-box border border-start-0">border-start-0 - Sin borde izquierda</span>
+            </div>
+        </div>
+        <hr>
+
+        <h1>COLORES DE BORDES</h1>
+        <div class="row">
+            <div class="col">
+                <span class="demo-box border border-primary">border-primary</span>
+                <span class="demo-box border border-secondary">border-secondary</span>
+                <span class="demo-box border border-success">border-success</span>
+                <span class="demo-box border border-danger">border-danger</span>
+                <span class="demo-box border border-warning">border-warning</span>
+                <span class="demo-box border border-info">border-info</span>
+                <span class="demo-box border border-light">border-light</span>
+                <span class="demo-box border border-dark">border-dark</span>
+                <span class="demo-box border border-white">border-white</span>
+            </div>
+        </div>
+        <hr>
+
+        <h1>GROSOR DE BORDES</h1>
+        <div class="row">
+            <div class="col">
+                <span class="demo-box border border-1">border-1 - Grosor 1px</span>
+                <span class="demo-box border border-2">border-2 - Grosor 2px</span>
+                <span class="demo-box border border-3">border-3 - Grosor 3px</span>
+                <span class="demo-box border border-4">border-4 - Grosor 4px</span>
+                <span class="demo-box border border-5">border-5 - Grosor 5px</span>
+            </div>
+        </div>
+        <hr>
+
+        <h1>BORDES REDONDEADOS</h1>
+        <div class="row">
+            <div class="col">
+                <span class="demo-box border rounded">rounded - Redondeado básico</span>
+                <span class="demo-box border rounded-0">rounded-0 - Sin redondeo</span>
+                <span class="demo-box border rounded-1">rounded-1 - Redondeado pequeño</span>
+                <span class="demo-box border rounded-2">rounded-2 - Redondeado medio</span>
+                <span class="demo-box border rounded-3">rounded-3 - Redondeado grande</span>
+                <span class="demo-box border rounded-circle">rounded-circle - Círculo</span>
+                <span class="demo-box border rounded-pill">rounded-pill - Píldora</span>
+            </div>
+        </div>
+        <hr>
+
+        <h1>REDONDEO EN LADOS ESPECÍFICOS</h1>
+        <div class="row">
+            <div class="col">
+                <span class="demo-box border rounded-top">rounded-top - Superior redondeado</span>
+                <span class="demo-box border rounded-end">rounded-end - Derecha redondeada</span>
+                <span class="demo-box border rounded-bottom">rounded-bottom - Inferior redondeado</span>
+                <span class="demo-box border rounded-start">rounded-start - Izquierda redondeada</span>
+            </div>
+        </div>
+        <hr>
+
+        <h1>SOMBRAS</h1>
+        <div class="row">
+            <div class="col">
+                <div class="demo-box shadow-none">shadow-none - Sin sombra</div>
+                <div class="demo-box shadow-sm">shadow-sm - Sombra pequeña</div>
+                <div class="demo-box shadow">shadow - Sombra regular</div>
+                <div class="demo-box shadow-lg">shadow-lg - Sombra grande</div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>COMBINACIONES DE BORDES</h1>
+        <div class="row">
+            <div class="col">
+                <h2>Borde con Color y Grosor</h2>
+                <span class="demo-box border border-primary border-3">border border-primary border-3</span>
+                <span class="demo-box border border-danger border-4">border border-danger border-4</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2>Borde Redondeado con Color</h2>
+                <span class="demo-box border border-success rounded-3">border border-success rounded-3</span>
+                <span class="demo-box border border-warning rounded-pill">border border-warning rounded-pill</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2>Borde con Sombra</h2>
+                <span class="demo-box border border-primary rounded shadow">border rounded shadow</span>
+                <span class="demo-box border border-info rounded shadow-lg">border rounded shadow-lg</span>
+            </div>
+        </div>
+        <hr>
+
+        <h1>EJEMPLOS PRÁCTICOS</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card border border-primary border-3 rounded-3 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Card con Estilo</h5>
+                        <p class="card-text">Card con borde azul, redondeado y con sombra.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border border-success rounded-pill shadow-lg">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Píldora</h5>
+                        <p class="card-text">Card con bordes muy redondeados y sombra grande.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Sin Borde</h5>
+                        <p class="card-text">Card sin borde pero con sombra pequeña.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>BOTONES CON BORDES</h1>
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-primary border border-dark border-3">Botón con Borde Oscuro</button>
+                <button class="btn btn-success rounded-pill shadow-lg">Botón Redondeado con Sombra</button>
+                <button class="btn btn-warning border border-danger border-2 rounded-0">Botón Sin Redondeo</button>
+            </div>
+        </div>
+        <hr>
+
+        <h1>IMÁGENES CON BORDES</h1>
+        <div class="row">
+            <div class="col">
+                <img src="imagenes/gato1.jpg" alt="Gato" class="border border-primary border-3 rounded" style="width: 150px;">
+                <img src="imagenes/gato2.jpg" alt="Gato" class="border border-success border-4 rounded-circle shadow" style="width: 150px;">
+                <img src="imagenes/gato3.jpg" alt="Gato" class="border-0 rounded-3 shadow-lg" style="width: 150px;">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.js"></script>
+    <title>Collapse y Accordion Bootstrap</title>
+    <style type="text/css">
+        .row{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="glosario_grid.html">Glosario Bootstrap</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#miNavbar" aria-controls="miNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="miNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_grid.html">Grid</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_imagenes.html">Imágenes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_tabla.html">Tablas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_textos.html">Textos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_horizontal.html">A. Horizontal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_vertical.html">A. Vertical</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_offsetting.html">Offsetting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_botones.html">Botones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_cards.html">Cards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_formularios.html">Formularios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_colores.html">Colores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_spacing.html">Spacing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_borders.html">Borders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_alerts_badges.html">Alerts y Badges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_flexbox.html">Flexbox</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_modals.html">Modals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_dropdowns.html">Dropdowns</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="glosario_collapse_accordion.html">Collapse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_tabs.html">Tabs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>COLLAPSE BÁSICO</h1>
+        <div class="row">
+            <div class="col">
+                <p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBasico" aria-expanded="false" aria-controls="collapseBasico">
+                        Mostrar/Ocultar contenido
+                    </button>
+                </p>
+                <div class="collapse" id="collapseBasico">
+                    <div class="card card-body">
+                        Este es el contenido que se muestra y oculta. Puedes colocar cualquier elemento HTML aquí, como texto, imágenes, formularios, etc.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>COLLAPSE CON ENLACE</h1>
+        <div class="row">
+            <div class="col">
+                <p>
+                    <a class="btn btn-success" data-bs-toggle="collapse" href="#collapseEnlace" role="button" aria-expanded="false" aria-controls="collapseEnlace">
+                        Enlace con collapse
+                    </a>
+                </p>
+                <div class="collapse" id="collapseEnlace">
+                    <div class="card card-body">
+                        Este collapse fue activado con un enlace en lugar de un botón. Ambas opciones funcionan correctamente.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>MÚLTIPLES TARGETS COLLAPSE</h1>
+        <div class="row">
+            <div class="col">
+                <p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMultiple1" aria-expanded="false">
+                        Toggle primer elemento
+                    </button>
+                    <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMultiple2" aria-expanded="false">
+                        Toggle segundo elemento
+                    </button>
+                    <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false">
+                        Toggle ambos elementos
+                    </button>
+                </p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="collapse multi-collapse" id="collapseMultiple1">
+                            <div class="card card-body">
+                                Este es el primer elemento colapsable. Puede ser mostrado individualmente o junto con el segundo elemento.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="collapse multi-collapse" id="collapseMultiple2">
+                            <div class="card card-body">
+                                Este es el segundo elemento colapsable. También puede ser mostrado individualmente o junto con el primer elemento.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>ACCORDION BÁSICO</h1>
+        <div class="row">
+            <div class="col">
+                <div class="accordion" id="accordionBasico">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Accordion Item #1
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionBasico">
+                            <div class="accordion-body">
+                                <strong>Este es el primer item del accordion.</strong> Este item está abierto por defecto. Cuando abras otro item, este se cerrará automáticamente. Los accordions son perfectos para FAQs y contenido organizado en secciones.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Accordion Item #2
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionBasico">
+                            <div class="accordion-body">
+                                <strong>Este es el segundo item.</strong> Contiene información diferente. Solo un item puede estar abierto a la vez en un accordion estándar, lo que ayuda a mantener la interfaz limpia y organizada.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionBasico">
+                            <div class="accordion-body">
+                                <strong>Este es el tercer item.</strong> Los accordions pueden tener tantos items como necesites. Son muy útiles para organizar grandes cantidades de contenido de forma compacta.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>ACCORDION SIEMPRE ABIERTO (FLUSH ACCORDION)</h1>
+        <div class="row">
+            <div class="col">
+                <p>En este accordion, múltiples items pueden estar abiertos al mismo tiempo:</p>
+                <div class="accordion accordion-flush" id="accordionFlush">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Flush Accordion Item #1
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlush">
+                            <div class="accordion-body">
+                                Este accordion no tiene bordes y padding. Es útil para integrarse mejor con el diseño de la página. Puedes abrir múltiples items a la vez.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Flush Accordion Item #2
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlush">
+                            <div class="accordion-body">
+                                Este es el segundo item del flush accordion. Observa cómo no tiene el borde característico del accordion estándar.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Flush Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlush">
+                            <div class="accordion-body">
+                                El estilo flush es ideal cuando quieres que el accordion se mezcle con el resto del contenido de forma más sutil.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>ACCORDION DONDE MÚLTIPLES ITEMS PUEDEN ESTAR ABIERTOS</h1>
+        <div class="row">
+            <div class="col">
+                <p>En este accordion, no se usa data-bs-parent, por lo que múltiples items pueden estar abiertos simultáneamente:</p>
+                <div class="accordion" id="accordionMultiple">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#multiOne" aria-expanded="true" aria-controls="multiOne">
+                                Sección 1: Información General
+                            </button>
+                        </h2>
+                        <div id="multiOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                Esta es la primera sección. Puedes mantenerla abierta mientras abres otras secciones. Esto es útil cuando necesitas comparar información o trabajar con múltiples secciones a la vez.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#multiTwo" aria-expanded="false" aria-controls="multiTwo">
+                                Sección 2: Detalles Técnicos
+                            </button>
+                        </h2>
+                        <div id="multiTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                Esta sección contiene detalles técnicos. Nota cómo puedes abrirla sin cerrar la sección anterior. Esto proporciona más flexibilidad al usuario.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#multiThree" aria-expanded="false" aria-controls="multiThree">
+                                Sección 3: Recursos Adicionales
+                            </button>
+                        </h2>
+                        <div id="multiThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                Esta sección contiene recursos adicionales. Todas las secciones pueden estar abiertas al mismo tiempo, dándole al usuario control total sobre qué información quiere ver.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>ACCORDION CON CARDS</h1>
+        <div class="row">
+            <div class="col">
+                <div class="accordion" id="accordionCards">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#cardOne" aria-expanded="true" aria-controls="cardOne">
+                                Card Accordion #1 - Características
+                            </button>
+                        </h2>
+                        <div id="cardOne" class="accordion-collapse collapse show" data-bs-parent="#accordionCards">
+                            <div class="accordion-body">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Características Principales</h5>
+                                        <p class="card-text">Este accordion utiliza cards dentro de cada item para un diseño más estructurado. Es ideal para presentar información de forma más visual y organizada.</p>
+                                        <ul>
+                                            <li>Diseño responsivo</li>
+                                            <li>Fácil personalización</li>
+                                            <li>Compatible con todos los navegadores</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#cardTwo" aria-expanded="false" aria-controls="cardTwo">
+                                Card Accordion #2 - Beneficios
+                            </button>
+                        </h2>
+                        <div id="cardTwo" class="accordion-collapse collapse" data-bs-parent="#accordionCards">
+                            <div class="accordion-body">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Beneficios de Usar Accordions</h5>
+                                        <p class="card-text">Los accordions ofrecen múltiples beneficios para la experiencia del usuario:</p>
+                                        <ul>
+                                            <li>Ahorro de espacio en la página</li>
+                                            <li>Mejor organización del contenido</li>
+                                            <li>Navegación intuitiva</li>
+                                            <li>Reducción del scroll</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-info text-white" type="button" data-bs-toggle="collapse" data-bs-target="#cardThree" aria-expanded="false" aria-controls="cardThree">
+                                Card Accordion #3 - Casos de Uso
+                            </button>
+                        </h2>
+                        <div id="cardThree" class="accordion-collapse collapse" data-bs-parent="#accordionCards">
+                            <div class="accordion-body">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Casos de Uso Comunes</h5>
+                                        <p class="card-text">Los accordions son perfectos para:</p>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <ul>
+                                                    <li>Preguntas frecuentes (FAQs)</li>
+                                                    <li>Términos y condiciones</li>
+                                                    <li>Especificaciones de productos</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <ul>
+                                                    <li>Documentación técnica</li>
+                                                    <li>Menús de navegación</li>
+                                                    <li>Listados de contenido</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>COLLAPSE HORIZONTAL</h1>
+        <div class="row">
+            <div class="col">
+                <p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHorizontal" aria-expanded="false" aria-controls="collapseHorizontal">
+                        Toggle collapse horizontal
+                    </button>
+                </p>
+                <div style="min-height: 120px;">
+                    <div class="collapse collapse-horizontal" id="collapseHorizontal">
+                        <div class="card card-body" style="width: 300px;">
+                            Este es un collapse horizontal. Se expande de izquierda a derecha en lugar de arriba a abajo. Es útil para menús laterales o paneles de información.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

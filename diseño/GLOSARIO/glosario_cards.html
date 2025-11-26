@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.js"></script>
+    <title>Cards Bootstrap</title>
+    <style type="text/css">
+        .row{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="glosario_grid.html">Glosario Bootstrap</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#miNavbar" aria-controls="miNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="miNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_grid.html">Grid</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_imagenes.html">Imágenes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_tabla.html">Tablas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_textos.html">Textos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_horizontal.html">A. Horizontal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_vertical.html">A. Vertical</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_offsetting.html">Offsetting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_botones.html">Botones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="glosario_cards.html">Cards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_formularios.html">Formularios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_colores.html">Colores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_spacing.html">Spacing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_borders.html">Borders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_alerts_badges.html">Alerts y Badges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_flexbox.html">Flexbox</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_modals.html">Modals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_dropdowns.html">Dropdowns</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_collapse_accordion.html">Collapse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_tabs.html">Tabs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>CARD BÁSICA</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Título de la Card</h5>
+                        <p class="card-text">Este es el contenido de la card. Puede contener cualquier tipo de texto o contenido HTML.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>CARD CON IMAGEN</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="imagenes/gato1.jpg" class="card-img-top" alt="Gato">
+                    <div class="card-body">
+                        <h5 class="card-title">Card con Imagen Superior</h5>
+                        <p class="card-text">La imagen se coloca en la parte superior de la card usando card-img-top.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Card con Imagen Inferior</h5>
+                        <p class="card-text">La imagen se coloca en la parte inferior de la card usando card-img-bottom.</p>
+                    </div>
+                    <img src="imagenes/gato2.jpg" class="card-img-bottom" alt="Gato">
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>CARD CON HEADER Y FOOTER</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        Header de la Card
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Título especial</h5>
+                        <p class="card-text">Contenido de la card con header y footer.</p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Footer de la Card
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>CARDS CON COLORES</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card text-white bg-primary mb-3">
+                    <div class="card-header">Header Primary</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card Primary</h5>
+                        <p class="card-text">Card con fondo azul primary.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white bg-success mb-3">
+                    <div class="card-header">Header Success</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card Success</h5>
+                        <p class="card-text">Card con fondo verde success.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white bg-danger mb-3">
+                    <div class="card-header">Header Danger</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card Danger</h5>
+                        <p class="card-text">Card con fondo rojo danger.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card text-white bg-warning mb-3">
+                    <div class="card-header">Header Warning</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card Warning</h5>
+                        <p class="card-text">Card con fondo amarillo warning.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white bg-info mb-3">
+                    <div class="card-header">Header Info</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card Info</h5>
+                        <p class="card-text">Card con fondo azul claro info.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white bg-dark mb-3">
+                    <div class="card-header">Header Dark</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card Dark</h5>
+                        <p class="card-text">Card con fondo oscuro dark.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>CARDS CON BORDES DE COLOR</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card border-primary mb-3">
+                    <div class="card-header">Header</div>
+                    <div class="card-body text-primary">
+                        <h5 class="card-title">Card con Borde Primary</h5>
+                        <p class="card-text">Solo el borde es de color.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-success mb-3">
+                    <div class="card-header">Header</div>
+                    <div class="card-body text-success">
+                        <h5 class="card-title">Card con Borde Success</h5>
+                        <p class="card-text">Solo el borde es de color.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-danger mb-3">
+                    <div class="card-header">Header</div>
+                    <div class="card-body text-danger">
+                        <h5 class="card-title">Card con Borde Danger</h5>
+                        <p class="card-text">Solo el borde es de color.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>CARD CON LISTA</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        Lista de Items
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Item 1</li>
+                        <li class="list-group-item">Item 2</li>
+                        <li class="list-group-item">Item 3</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>CARD CON ENLACES Y BOTONES</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Título de la Card</h5>
+                        <p class="card-text">Card con enlaces y botones en el cuerpo.</p>
+                        <a href="#" class="card-link">Enlace 1</a>
+                        <a href="#" class="card-link">Enlace 2</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Título de la Card</h5>
+                        <p class="card-text">Card con botones.</p>
+                        <a href="#" class="btn btn-primary">Ir a algún lugar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>CARD GROUP</h1>
+        <div class="row">
+            <div class="col">
+                <div class="card-group">
+                    <div class="card">
+                        <img src="imagenes/perro1.jpg" class="card-img-top" alt="Perro">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 1</h5>
+                            <p class="card-text">Las cards en un grupo tienen el mismo ancho.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="imagenes/perro2.jpg" class="card-img-top" alt="Perro">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 2</h5>
+                            <p class="card-text">Se alinean horizontalmente y tienen la misma altura.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="imagenes/perro3.jpg" class="card-img-top" alt="Perro">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 3</h5>
+                            <p class="card-text">Perfectas para crear galerías.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>CARDS HORIZONTALES</h1>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="imagenes/gato3.jpg" class="img-fluid rounded-start" alt="Gato">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Card Horizontal</h5>
+                                <p class="card-text">Esta es una card horizontal usando el sistema de grid dentro de la card.</p>
+                                <p class="card-text"><small class="text-muted">Última actualización hace 3 minutos</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

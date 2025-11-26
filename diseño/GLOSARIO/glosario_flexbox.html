@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.js"></script>
+    <title>Flexbox Bootstrap</title>
+    <style type="text/css">
+        .row{
+            margin-top: 20px;
+        }
+        .demo-container{
+            background: #e9ecef;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .demo-item{
+            background: #6c757d;
+            color: white;
+            padding: 10px;
+            border: 1px solid white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="glosario_grid.html">Glosario Bootstrap</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#miNavbar" aria-controls="miNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="miNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_grid.html">Grid</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_imagenes.html">Imágenes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_tabla.html">Tablas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_textos.html">Textos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_horizontal.html">A. Horizontal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_vertical.html">A. Vertical</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_offsetting.html">Offsetting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_botones.html">Botones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_cards.html">Cards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_formularios.html">Formularios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_colores.html">Colores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_spacing.html">Spacing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_borders.html">Borders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_alerts_badges.html">Alerts y Badges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="glosario_flexbox.html">Flexbox</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_modals.html">Modals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_dropdowns.html">Dropdowns</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_collapse_accordion.html">Collapse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glosario_tabs.html">Tabs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>FLEX BÁSICO</h1>
+        <div class="row">
+            <div class="col">
+                <h2>d-flex - Display Flex</h2>
+                <div class="demo-container d-flex">
+                    <div class="demo-item">Item 1</div>
+                    <div class="demo-item">Item 2</div>
+                    <div class="demo-item">Item 3</div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>FLEX DIRECTION (DIRECCIÓN)</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>flex-row - Horizontal (por defecto)</h2>
+                <div class="demo-container d-flex flex-row">
+                    <div class="demo-item">Item 1</div>
+                    <div class="demo-item">Item 2</div>
+                    <div class="demo-item">Item 3</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2>flex-row-reverse - Horizontal invertido</h2>
+                <div class="demo-container d-flex flex-row-reverse">
+                    <div class="demo-item">Item 1</div>
+                    <div class="demo-item">Item 2</div>
+                    <div class="demo-item">Item 3</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>flex-column - Vertical</h2>
+                <div class="demo-container d-flex flex-column">
+                    <div class="demo-item">Item 1</div>
+                    <div class="demo-item">Item 2</div>
+                    <div class="demo-item">Item 3</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2>flex-column-reverse - Vertical invertido</h2>
+                <div class="demo-container d-flex flex-column-reverse">
+                    <div class="demo-item">Item 1</div>
+                    <div class="demo-item">Item 2</div>
+                    <div class="demo-item">Item 3</div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>JUSTIFY CONTENT (ALINEACIÓN HORIZONTAL)</h1>
+        <div class="row">
+            <div class="col">
+                <h2>justify-content-start</h2>
+                <div class="demo-container d-flex justify-content-start">
+                    <div class="demo-item">Item 1</div>
+                    <div class="demo-item">Item 2</div>
+                    <div class="demo-item">Item 3</div>
+                </div>
+                <h2>justify-content-center</h2>
+                <div class="demo-container d-flex justify-content-center">
+                    <div class="demo-item">Item 1</div>
+                    <div class="demo-item">Item 2</div>
+                    <div class="demo-item">Item 3</div>
+                </div>
+                <h2>justify-content-end</h2>
+                <div class="demo-container d-flex justify-content-end">
+                    <div class="demo-item">Item 1</div>
+                    <div class="demo-item">Item 2</div>
+                    <div class="demo-item">Item 3</div>
+                </div>
+                <h2>justify-content-between</h2>
+                <div class="demo-container d-flex justify-content-between">
+                    <div class="demo-item">Item 1</div>
+                    <div class="demo-item">Item 2</div>
+                    <div class="demo-item">Item 3</div>
+                </div>
+                <h2>justify-content-around</h2>
+                <div class="demo-container d-flex justify-content-around">
+                    <div class="demo-item">Item 1</div>
+                    <div class="demo-item">Item 2</div>
+                    <div class="demo-item">Item 3</div>
+                </div>
+                <h2>justify-content-evenly</h2>
+                <div class="demo-container d-flex justify-content-evenly">
+                    <div class="demo-item">Item 1</div>
+                    <div class="demo-item">Item 2</div>
+                    <div class="demo-item">Item 3</div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>ALIGN ITEMS (ALINEACIÓN VERTICAL)</h1>
+        <div class="row">
+            <div class="col">
+                <h2>align-items-start</h2>
+                <div class="demo-container d-flex align-items-start" style="height: 100px;">
+                    <div class="demo-item">Item 1</div>
+                    <div class="demo-item">Item 2</div>
+                    <div class="demo-item">Item 3</div>
+                </div>
+                <h2>align-items-center</h2>
+                <div class="demo-container d-flex align-items-center" style="height: 100px;">
+                    <div class="demo-item">Item 1</div>
+                    <div class="demo-item">Item 2</div>
+                    <div class="demo-item">Item 3</div>
+                </div>
+                <h2>align-items-end</h2>
+                <div class="demo-container d-flex align-items-end" style="height: 100px;">
+                    <div class="demo-item">Item 1</div>
+                    <div class="demo-item">Item 2</div>
+                    <div class="demo-item">Item 3</div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>ALIGN SELF (ALINEACIÓN INDIVIDUAL)</h1>
+        <div class="row">
+            <div class="col">
+                <div class="demo-container d-flex" style="height: 150px;">
+                    <div class="demo-item align-self-start">align-self-start</div>
+                    <div class="demo-item align-self-center">align-self-center</div>
+                    <div class="demo-item align-self-end">align-self-end</div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>FLEX WRAP</h1>
+        <div class="row">
+            <div class="col">
+                <h2>flex-nowrap - Sin ajuste (por defecto)</h2>
+                <div class="demo-container d-flex flex-nowrap">
+                    <div class="demo-item">Item 1</div>
+                    <div class="demo-item">Item 2</div>
+                    <div class="demo-item">Item 3</div>
+                    <div class="demo-item">Item 4</div>
+                    <div class="demo-item">Item 5</div>
+                    <div class="demo-item">Item 6</div>
+                </div>
+                <h2>flex-wrap - Con ajuste</h2>
+                <div class="demo-container d-flex flex-wrap">
+                    <div class="demo-item">Item 1</div>
+                    <div class="demo-item">Item 2</div>
+                    <div class="demo-item">Item 3</div>
+                    <div class="demo-item">Item 4</div>
+                    <div class="demo-item">Item 5</div>
+                    <div class="demo-item">Item 6</div>
+                </div>
+                <h2>flex-wrap-reverse - Ajuste invertido</h2>
+                <div class="demo-container d-flex flex-wrap-reverse">
+                    <div class="demo-item">Item 1</div>
+                    <div class="demo-item">Item 2</div>
+                    <div class="demo-item">Item 3</div>
+                    <div class="demo-item">Item 4</div>
+                    <div class="demo-item">Item 5</div>
+                    <div class="demo-item">Item 6</div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>FLEX GROW Y SHRINK</h1>
+        <div class="row">
+            <div class="col">
+                <h2>flex-grow-1 - Crece para llenar espacio</h2>
+                <div class="demo-container d-flex">
+                    <div class="demo-item flex-grow-1">Item con flex-grow-1</div>
+                    <div class="demo-item">Item normal</div>
+                </div>
+                <h2>flex-shrink-0 - No se encoge</h2>
+                <div class="demo-container d-flex">
+                    <div class="demo-item flex-shrink-0" style="width: 300px;">Item con flex-shrink-0 (300px)</div>
+                    <div class="demo-item">Item que se ajusta</div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>FLEX FILL</h1>
+        <div class="row">
+            <div class="col">
+                <div class="demo-container d-flex">
+                    <div class="demo-item flex-fill">Item 1 (flex-fill)</div>
+                    <div class="demo-item flex-fill">Item 2 (flex-fill)</div>
+                    <div class="demo-item flex-fill">Item 3 (flex-fill)</div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>ORDER (ORDEN)</h1>
+        <div class="row">
+            <div class="col">
+                <div class="demo-container d-flex">
+                    <div class="demo-item order-3">Item 1 (order-3)</div>
+                    <div class="demo-item order-1">Item 2 (order-1)</div>
+                    <div class="demo-item order-2">Item 3 (order-2)</div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>GAP (ESPACIADO)</h1>
+        <div class="row">
+            <div class="col">
+                <h2>gap-0 - Sin espacio</h2>
+                <div class="demo-container d-flex gap-0">
+                    <div class="demo-item">Item 1</div>
+                    <div class="demo-item">Item 2</div>
+                    <div class="demo-item">Item 3</div>
+                </div>
+                <h2>gap-3 - Espacio medio</h2>
+                <div class="demo-container d-flex gap-3">
+                    <div class="demo-item">Item 1</div>
+                    <div class="demo-item">Item 2</div>
+                    <div class="demo-item">Item 3</div>
+                </div>
+                <h2>gap-5 - Espacio grande</h2>
+                <div class="demo-container d-flex gap-5">
+                    <div class="demo-item">Item 1</div>
+                    <div class="demo-item">Item 2</div>
+                    <div class="demo-item">Item 3</div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>EJEMPLO PRÁCTICO: NAVBAR</h1>
+        <div class="row">
+            <div class="col">
+                <div class="demo-container d-flex justify-content-between align-items-center">
+                    <div class="demo-item">Logo</div>
+                    <div class="demo-item">Menú</div>
+                    <div class="demo-item">Usuario</div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>EJEMPLO PRÁCTICO: CARDS EN FILA</h1>
+        <div class="row">
+            <div class="col">
+                <div class="d-flex gap-3 flex-wrap">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 1</h5>
+                            <p class="card-text">Contenido de la card 1</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 2</h5>
+                            <p class="card-text">Contenido de la card 2</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 3</h5>
+                            <p class="card-text">Contenido de la card 3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
